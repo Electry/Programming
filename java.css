@@ -25,16 +25,15 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    right: 230px;
-    /* Set this to the width of the navigation frame */
+    right: 230px; /* Set this to the width of the navigation frame */
     
     bottom: 0;
     overflow: auto;
     background: #fff;
 }
-.innertube {
+.inner {
     margin: 15px;
-    /* Provides padding for the content */
+   
 }
 p {
     color: #555;
@@ -59,7 +58,7 @@ nav ul a {
     width: 100%;
 }
 
-.innertube h1 {
+.inner h1 {
 	text-align:center;
 
 }
