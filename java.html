@@ -45,44 +45,49 @@
 							<li>Java has thousands of built in classes that anyone can use</li>
 							<li>An integrated development environment is a piece of software that allows you to write programs more eaisly</li>
 							<li>HelloWorld is traditionally the first computer program that someone starting to learn Java writes</li>
-							<li>"System.out.println()" prints whatever is inside () to the console, followed by a new line.</li> 
+							<li>"System.out.println()" prints whatever is inside () to the console, followed by a new line</li> 
 						</ul>
 					</p>
 				</div> <!-- end chapter -->
+
 				<div class="chapter">
-					<h2>OOP (Object-Oriented Programming)</h2>
-					<p>Object-oriented programming is a type of programming that uses the concept of classes and objects. It is a well known approach since we live in a world that is object oriented. Everywhere you look, there are objects, and each object has attributes that make them different from other objects. Classes define how an object will be constructed, then objects are actually created from these classes, which you manipulate in your program. It is a good practice to relate new Java concepts to things in your daily life, as it helps you really understand what is going on.</p>
+					<h2>Syntax</h2>
+					<p>The syntax of a programming language defines the correct way to type code so that the compiler can read it. Syntax can be thought of as the structure of the program and the sort of dictionary of the language. A syntax error is when you mess up how the code is supposed to be written, like forgetting a semicolon after an instruction. Your program will not run until all syntax errors are fixed. If you have any syntax errors, the compiler will respond with a compile-time error. </p>
 					<hr>
-					<h2>Picking an IDE</h2>
-					<p>An Integrated Development Environment, or IDE, is a simple piece of software that aids you in writing code. There are professional IDEs, such as Eclipse or IntelliJ, which are jam packed with features that make creating programs eaiser, and there are other IDEs that are great for introducing new people to programming. I personally reccomend Eclipse, as that is what I am familiar with. Also, <a href="repl.it/languages/java" alt="repl.it">repl.it/languages/java</a> is a useful way to compile and run codes from a computer which you do not have an IDE on.</p>
+					<h2>Primitive Variables</h2>
+					<p>Data, such as numbers, characters, sentences, and more can be stored and retrieved while a program is running. Data such as integers and decimal numbers are stored in the computer by declaring a variable. When you declare a variable, the computer makes space for it inside the working memory of the computer while the program is running (RAM). Once the space is made, the programmer can give the variable a value, change the value, or retrieve the value at any time.<br>In Java, the programmer must decide ahead of time what type of data they want to store in the variable. This is known as a data type. The two most important primitive data types that store numbers are the <em>int</em> and the <em>double</em>.<br>Numbers that contain decimals can only be stored in a double data type (there are other types, such as float, but that is not important right now). Integers can be stored in an int data type or a double data type. When you first create a variable, this is known as declaring a variable, and when you first assing it a value, it is known as initializing it.</p>
+
+					<pre style='color:#000020;background:#f6f8ff;'>int myNumber = 47<span style='color:#308080; '>;</span> <span style='color:#595979; '>//remember: decimal values can not be stored in an int</span>
+
+double pi = 3.14<span style='color:#308080; '>;</span>
+
+int age = 35<span style='color:#308080; '>;</span>
+
+double price = 9.99<span style='color:#308080; '>;</span>
+</pre>
+					<p> These are simple examples of declaring int and double primitive variables in java. </p>
 					<hr>
-					<h2>Hello World</h2>
-					<p>A hello world program is traditionally the first computer program that a beginning Java programmer writes.</p>
-					
-					<!-- Code Snippet -->
-					<pre style='color:#000020;background:#f6f8ff;'><span style='color:#200080; font-weight:bold; '>public</span> <span style='color:#200080; font-weight:bold; '>class</span> HelloWorld <span style='color:#406080; '>{</span>
-
-	    <span style='color:#200080; font-weight:bold; '>public</span> <span style='color:#200080; font-weight:bold; '>static</span> <span style='color:#7779bb; '>void</span> main<span style='color:#308080; '>(</span><span style='color:#6679aa; font-weight:bold; '>String</span><span style='color:#308080; '>[</span><span style='color:#308080; '>]</span> args<span style='color:#308080; '>)</span> <span style='color:#406080; '>{</span>
-	        <span style='color:#6679aa; font-weight:bold; '>System</span><span style='color:#308080; '>.</span>out<span style='color:#308080; '>.</span>println<span style='color:#308080; '>(</span><span style='color:#1060b6; '>"Hello World!"</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
-	    <span style='color:#406080; '>}</span>
-
-	<span style='color:#406080; '>}</span>
-	</pre>
-					<p>To begin writing a Java program, you must first make a class. This is done with "public class HelloWorld { }". In order to run a Java program, there must be a main method to be run. "public static voic main(String[] args) {  }" is how you create a main method. Don't worry too much about what each term means now, we will go over that in depth later. <br>To print something to the console in a Java program, you must use either "System.out.println()" or "System.out.print()". The only difference between the two is that the latter does not return or create a new line after printing whatever is inside the parentheses.</p>	
-
+					<h2>Naming Variables</h2>
+					<p>When you create variables, you should follow the rules of a naming convention. The technique used to create identifies in Java is known as camel case. In camel case, all primitive variable names start with a lowercase letter, then the first letter of each new word in the variable name should be capitalized. Camel case example: firstName, lastName, dayOfWeek. <br>Variable names should be descriptive and concise. It should both describe exactly what the variable holds, and be short enough to not become a pain every time you use it.<br>Variable names in Java cannot start with a number or a symbol(exculding the $ and _ symbols). </p>
 					<hr>
-					<h2>Review 1</h2>
+					<h2>boolean values</h2>
+					<p>If you want to store a true of false value, you should choose a <em>boolean</em> variable. The boolean data type is stored in the computer memory the same way as ints and doubles are stored. They are also declared and initialized the same way, but you use the values of "true" and "false" instead of numbers or strings.</p>
+					<hr>
+					<h2>Keywords</h2>
+					<p>In Java, there are certain keywords that are reserved. The compiler looks for these words and treats them different from regular text. Some examples of keywords include int, double, boolean, public, and class. Keywords cannot be used as names of variables, as it confuses the compiler and results in a syntax error. A more extensive list of keywords can be found with a quick google search, but if you are using an IDE, keywords are usually highlighted a certain color so that you know the compiler will treat it specially.</p>
+					<hr>
+					<h2>Review 2</h2>
 					<p>
 						<ul>
-							<li>Java can run on any platform</li>
-							<li>Java is a general-purpose, object-oriented computer programming language</li>
-							<li>Java has thousands of built in classes that anyone can use</li>
-							<li>An integrated development environment is a piece of software that allows you to write programs more eaisly</li>
-							<li>HelloWorld is traditionally the first computer program that someone starting to learn Java writes</li>
-							<li>"System.out.println()" prints whatever is inside () to the console, followed by a new line.</li> 
+							<li>Syntax is the correct way to type code so that it will run</li>
+							<li>A variable is a simple data structure that can be used to store a value on a computer. This value can be retrieved or modified at any time</li>
+							<li>The double data type can store numbers with decimals, while the int data type can only store whole numbers</li>
+							<li>Naming convention in Java is to use camelCase. Variable names cannot start with numbers or symbols (except $ or _)</li>
+							<li>The boolean data type is a true or false value</li>
+							<li>A keyword is a reserved word in  Java</li>
 						</ul>
 					</p>
-				</div> <!-- end chapter -->
+				</div>
 
 
 			</div>
@@ -98,13 +103,14 @@
 				<li><a href="#">Hello World</a></li>
 				<li><a href="#">Review 1</a></li>
 		
-			<h3>Advanced</h3>
+			<h3>Fundamentals</h3>
 			<ul>
-				<li><a href="#">Hello World</a></li>
 				<li><a href="#">Syntax</a></li>
 				<li><a href="#">Variables</a></li>
-				<li><a href="#">Loops</a></li>
-				<li><a href="#">Conditionals</a></li>
+				<li><a href="#">Naming</a></li>
+				<li><a href="#">boolean</a></li>
+				<li><a href="#">Keywords</a></li>
+				<li><a href="#">Review 2</a></li>
 			</ul>
 			</div>
 		</nav>
