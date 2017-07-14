@@ -38,6 +38,10 @@ main {
 p {
     color: #555;
 }
+
+main .inner ul li {
+    color: #555;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -66,6 +70,10 @@ nav ul a {
 main {
     left: 20%;
     right: 300px;
+}
+
+hr {
+    color: darkgreen;
 }
 
 
