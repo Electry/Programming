@@ -6,12 +6,18 @@ body {
     max-height: 100%;
     font-family: Sans-serif;
     line-height: 1.5em;
+    background: #fff;
 }
 #nav {
     position: absolute;
+    border-radius: 3px;
     top: 0;
     bottom: 0;
     right: 0;
+    padding-left: 15px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     width: 230px;
     /* Width of navigation frame */
     
@@ -21,25 +27,25 @@ body {
     
     background: #eee;
 }
-main {
+.main {
     position: fixed;
     top: 0;
     left: 0;
     right: 230px; /* Set this to the width of the navigation frame */
-    
+    height: 100%;
     bottom: 0;
     overflow: auto;
-    background: #fff;
+    background: #FDFDFD;
 }
-.inner {
-    margin: 15px;
+.main .inner {
+    margin: 15px 20%;
    
 }
 p {
     color: #555;
 }
 
-main .inner ul li {
+.main .inner ul li {
     color: #555;
 }
 nav ul {
@@ -53,27 +59,48 @@ nav ul a {
 }
 /*IE6 fix*/
 
-* html body {
+body {
     padding: 0 230px 0 0;
     /* Set the second value to the width of the navigation frame */
-}
-* html main {
-    height: 100%;
-    width: 100%;
 }
 
 .inner h1 {
 	text-align:center;
+    font-family: 'Fenix', serif;
+    font-size: 350%;
 
 }
+.inner h2 {
+    font-family: 'Fenix', serif;
+    font-size: 250%;
+}
 
-main {
-    left: 20%;
-    right: 300px;
+.inner p {
+    font-family: 'Roboto', sans-serif;
+
 }
 
 hr {
     color: darkgreen;
+}
+
+.chapter {
+    margin: 100px 0;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    padding: 12px;
+}
+
+#intro {
+    background-color: #f2f2f2;
+    padding: 12px;
+    border-radius: 6px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 
