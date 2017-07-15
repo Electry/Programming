@@ -6,7 +6,7 @@ body {
     max-height: 100%;
     font-family: Sans-serif;
     line-height: 1.5em;
-    background: #fff;
+    background:  #ebefe6;
 }
 #nav {
     position: absolute;
@@ -35,7 +35,7 @@ body {
     height: 100%;
     bottom: 0;
     overflow: auto;
-    background: #FDFDFD;
+    background:  #ebefe6;
 }
 .main .inner {
     margin: 15px 20%;
@@ -86,7 +86,7 @@ hr {
 
 .chapter {
     margin: 100px 0;
-    background-color: #f2f2f2;
+    background-color: #ededed;
     border-radius: 6px;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
@@ -95,7 +95,7 @@ hr {
 }
 
 #intro {
-    background-color: #f2f2f2;
+    background-color: #ededed;
     padding: 4px 12px 8px 12px; 
     border-radius: 6px;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
