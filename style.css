@@ -44,6 +44,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 40px;
     float: left;
     background-color: #5F5F5F;
+    font-family: "Segoe UI";
+    letter-spacing: 1px;
 }
 #navbar ul {
     list-style-type: none;
@@ -107,6 +109,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 #menu ul li:hover {
     background-color: #1E88E5;
+    color: #FFFFFF;
+}
+#menu ul li.selected {
+    background-color: #2196F3;
     color: #FFFFFF;
 }
 
